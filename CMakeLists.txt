@@ -9,6 +9,12 @@ find_package(Crow CONFIG REQUIRED)
 
 add_executable(GPSNotification
     src/main.cpp
+    src/CoordinateCapture.cpp
+    src/DistanceCalculator.cpp
+)
+
+target_include_directories(GPSNotification PRIVATE
+    include
 )
 
 target_link_libraries(GPSNotification PRIVATE
