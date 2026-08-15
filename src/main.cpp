@@ -15,8 +15,8 @@ int main()
         CoordinateCapture capture;
         DistanceCalculator calculator;
 
-        Coordinates truck = capture.getTruckCoordinates();
-        Coordinates customer = capture.getCustomerCoordinates();
+        Coordinates truck = capture.getCurrentLocation();
+        Coordinates customer = capture.getCustomerCoordinates(); // Assuming this method retrieves the customer's coordinates, will add later.
 
         double distance = calculator.calculate(truck, customer);
 

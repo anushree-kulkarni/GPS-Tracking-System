@@ -11,6 +11,7 @@ add_executable(GPSNotification
     src/main.cpp
     src/CoordinateCapture.cpp
     src/DistanceCalculator.cpp
+    src/LocationAPI.cpp
 )
 
 target_include_directories(GPSNotification PRIVATE
